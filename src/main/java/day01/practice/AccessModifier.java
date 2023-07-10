@@ -8,11 +8,11 @@ public class AccessModifier {
     private static String d = "d";
 
     public static void main(String[] args) {
-        AccessModifier accessModifier = new AccessModifier(); // Create an instance
+        AccessModifier accessModifier = new AccessModifier(); 
 
         System.out.println(accessModifier.a);
         System.out.println(accessModifier.b);
         System.out.println(accessModifier.c);
-        System.out.println(d);
+        System.out.println(accessModifier.d);
     }
 }
