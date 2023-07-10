@@ -1,11 +1,11 @@
 package day01.practice;
 
 public class Cat {
-    // Attributes
+    
     private int age;
     private String color;
 
-    // Getters and setters
+
     public int getAge() {
         return age;
     }
@@ -22,14 +22,12 @@ public class Cat {
         this.color = color;
     }
 
-    // Method to make the cat speak
     public void speak() {
         System.out.println("Meow!");
     }
 
-    // Main method to create Cat objects
     public static void main(String[] args) {
-        // Create two Cat objects
+        
         Cat cat1 = new Cat();
         cat1.setAge(4);
         cat1.setColor("White");
@@ -38,7 +36,7 @@ public class Cat {
         cat2.setAge(3);
         cat2.setColor("Black");
 
-        // Print the attributes of each Cat
+      
         System.out.println("Cat 1:");
         System.out.println("Age: " + cat1.getAge());
         System.out.println("Color: " + cat1.getColor());
