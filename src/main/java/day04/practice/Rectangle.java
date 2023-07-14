@@ -29,6 +29,11 @@ public class Rectangle {
     public double calculateArea() {
         return length * breadth;
     }
+
+	public String getArea() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
 class Square extends Rectangle {
