@@ -1,6 +1,6 @@
 package day05.practice;
 
-public class Main {
+public class AtmTest {
     public static void main(String[] args) {
         Account axisAccount = new Account("AX001", 6000);
         ATM axisATM = new AxisATM();
