@@ -1,10 +1,4 @@
-/*
- * 
- * 
- * 
- * 
- * 
- * package day04.practice;
+package day04.practice;
 
 public class PolygonTest {
 
@@ -23,10 +17,4 @@ public class PolygonTest {
 
 }
 
-*
-*
-*
-*
-*
-*/
 
