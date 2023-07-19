@@ -5,7 +5,7 @@ public class Department {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the comma-separated DeptName, EmployeeName (press Enter twice to finish):");
+        System.out.println("Enter the comma-separated Department, Employee (press Enter twice to finish):");
 
         HashMap<String, List<String>> departmentEmployees = new HashMap<>();
 
