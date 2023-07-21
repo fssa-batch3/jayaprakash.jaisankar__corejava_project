@@ -22,6 +22,11 @@ public class RemoveDuplicates {
         System.out.println(numberList);
         System.out.println( uniqueNumbers);
     }
+
+	public static List<Integer> removeDuplicate(List<Integer> numberList) {
+		
+		return null;
+	}
 }
 
 

@@ -1,7 +1,4 @@
 package day10.practice;
-
-
-
 import java.util.ArrayList;
 
 class User {

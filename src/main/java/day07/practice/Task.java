@@ -56,4 +56,24 @@ public class Task {
         }
 
     }
+
+	public Object getName() {
+
+		return null;
+	}
+	
+	public Object setName() {
+
+		return null;
+	}
+
+	public Integer getId() {
+
+		return null;
+	}
+
+	public Object getDeadline() {
+
+		return null;
+	}
 }

@@ -28,4 +28,11 @@ public class RemoveDuplicate {
         }
     }
 
+	public static List<String> removeDuplicates(List<String> cityList) {
+		
+		return null;
+	}
+
+	
+
 }
