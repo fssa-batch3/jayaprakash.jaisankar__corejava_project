@@ -41,7 +41,7 @@ public class Main {
         boolean exit = false;
 
         while (!exit) {
-            System.out.println("Enter tasks (id, name, deadline) or type 'exit' to stop:");
+            System.out.println("Enter tasks (id, name, deadline):");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {
