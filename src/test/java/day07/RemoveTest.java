@@ -15,7 +15,7 @@ public class RemoveTest {
         List<Integer> numberList = new ArrayList<>(Arrays.asList(1, 2, 2, 3, 4, 2));
         List<Integer> expectedUnique = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
 
-        List<Integer> uniqueNumbers = RemoveDuplicates.removeDuplicates(numberList);
+        List<Integer> uniqueNumbers = RemoveDuplicates.removeDuplicate(numberList);
 
         Assertions.assertEquals(expectedUnique.size(), uniqueNumbers.size());
         Assertions.assertTrue(uniqueNumbers.containsAll(expectedUnique));
