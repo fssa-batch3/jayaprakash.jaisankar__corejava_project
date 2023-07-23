@@ -2,9 +2,7 @@ package day08.practice;
 import java.util.*;
 
 public class Department {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+    public static Map<String, List<String>> getDepartmentEmployees(Scanner scanner) {
         System.out.println("Enter the comma-separated Department, Employee (press Enter twice to finish):");
 
         HashMap<String, List<String>> departmentEmployees = new HashMap<>();
@@ -30,6 +28,13 @@ public class Department {
             }
         }
 
+        return departmentEmployees;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Map<String, List<String>> departmentEmployees = getDepartmentEmployees(scanner);
+
         for (Map.Entry<String, List<String>> entry : departmentEmployees.entrySet()) {
             String department = entry.getKey();
             List<String> employees = entry.getValue();
@@ -43,7 +48,5 @@ public class Department {
             }
             System.out.println(output.toString());
         }
-
     }
 }
-
