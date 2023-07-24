@@ -1,38 +1,30 @@
 package day11.practice;
 
-import day11.solved.*;
-
-
-
-//import com.fssa.learnJava.corejava.day13.ConnectionUtil;
-
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
+class TaskDAO {
+    // JDBC connection details
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/project";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "123456";
 
+    public void createTask(Task task) throws DAOException {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String insertQuery = "INSERT INTO task_table (id, name, status) VALUES (?, ?, ?)";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
+                preparedStatement.setInt(1, task.id);
+                preparedStatement.setString(2, task.name);
+                preparedStatement.setString(3, task.status);
 
-public class TaskDAO {
-	 
-  public static void main(String[] args) throws Exception {       
-       
-      // Step 01: Get connection
-      Connection connection = ConnectionUtil.getConnection();
-      System.out.println(connection);
-
-      // Step 02: Create a Statement
-      Statement stmt = connection.createStatement();
-       
-      // Step 03: Execute Insert Query
-      String query = "INSERT INTO Task (id,name,status) " +
-              "VALUES ('10','Task','Pending')";
-
-      int rows = stmt.executeUpdate(query);
-           
-      System.out.println("No of rows inserted :" + rows );
-       
-      // Step 04: close the connection resources
-      stmt.close();
-      connection.close();   
-  } 
+                // Execute the insert statement
+                preparedStatement.executeUpdate();
+            }
+        } catch (SQLException e) {
+            // Rethrow the SQLException as a custom DAOException
+            throw new DAOException("Error creating task", e);
+        }
+    }
 }
