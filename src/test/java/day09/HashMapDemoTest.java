@@ -4,6 +4,8 @@ import day09.solved.*;
 
 import org.junit.jupiter.api.Test;
 
+import day08.solved.HashMapDemo;
+
 import java.util.HashMap;
 import java.util.Map;
 

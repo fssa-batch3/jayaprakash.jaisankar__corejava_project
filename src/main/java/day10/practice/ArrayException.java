@@ -1,12 +1,13 @@
 package day10.practice;
+
+
 import java.util.ArrayList;
 
 class User {
     int id;
     String name;
     String emailId;
-    
-    
+
     public User(int id, String name, String emailId) {
         this.id = id;
         this.name = name;
@@ -35,10 +36,19 @@ class UserManager {
         }
         userList.add(user);
     }
+
+    public int getUserCount() {
+        return userList.size();
+    }
 }
 
-public class  ArrayException {
+public class ArrayException {
     public static void main(String[] args) {
+        ArrayException app = new ArrayException();
+        app.registerUsers();
+    }
+
+    public void registerUsers() {
         UserManager userManager = new UserManager();
 
         try {
@@ -50,7 +60,6 @@ public class  ArrayException {
             userManager.register(user2);
             System.out.println("User registered: " + user2.name);
 
-           
             User duplicateUser = new User(3, "Jayaprakash", "jayaprakash@gmail.com");
             userManager.register(duplicateUser);
             System.out.println("User registered: " + duplicateUser.name);
