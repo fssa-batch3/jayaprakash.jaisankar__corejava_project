@@ -1,4 +1,4 @@
-package day10;
+package day10.practice;
 
 import day10.practice.*;
 

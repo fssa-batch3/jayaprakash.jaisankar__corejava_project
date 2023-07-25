@@ -1,4 +1,4 @@
-package day10;
+package day10.practice;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

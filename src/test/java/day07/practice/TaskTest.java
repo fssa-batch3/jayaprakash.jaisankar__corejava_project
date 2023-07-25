@@ -1,4 +1,4 @@
-package day07;
+package day07.practice;
 
 import day07.practice.*;
 import org.junit.jupiter.api.Assertions;
