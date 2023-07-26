@@ -1,6 +1,5 @@
 package day12.practice;
 
-import day12.practice.*;
 
 import org.junit.jupiter.api.*;
 
@@ -18,7 +17,7 @@ class TaskDAOTest {
     @Test
     void testCreateTask() {
         Task task = new Task();
-        task.id = 21;
+        task.id = 29;
         task.name = "Task";
         task.status = "Process";
 
@@ -47,7 +46,7 @@ class TaskDAOTest {
 
     @Test
     void testDeleteTask() {
-        int taskId = 12;
+        int taskId = 21;
 
         try {
             taskDAO.deleteTask(taskId);
