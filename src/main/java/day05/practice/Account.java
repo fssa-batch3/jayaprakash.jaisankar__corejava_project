@@ -1,8 +1,4 @@
-
-
 package day05.practice;
-
-
 
 class Account {
     private String accNo;
@@ -33,10 +29,10 @@ class Account {
 }
 
 // Interface
-public interface ATM {
+ interface ATM {
     boolean deposit(Account account, double amount);
     boolean withdraw(Account account, double amount) throws Exception;
-    double getBalance(Account account); // Pass the Account object as a parameter
+    double getBalance(Account account); 
 }
 
 // Implementation
@@ -65,7 +61,7 @@ class AxisATM implements ATM {
     }
 
     @Override
-    public double getBalance(Account account) { // Add the Account object as a parameter
+    public double getBalance(Account account) { 
         return account.getBalance();
     }
 }

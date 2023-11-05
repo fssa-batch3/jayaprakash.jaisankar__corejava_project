@@ -1,11 +1,11 @@
 package day04.practice;
 
 
-public class Rectangle {
+public class Rectangle1 {
     protected double length;
     protected double breadth;
 
-    public Rectangle(double length, double breadth) {
+    public Rectangle1(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
@@ -31,12 +31,11 @@ public class Rectangle {
     }
 
 	public String getArea() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 }
 
-class Square extends Rectangle {
+class Square extends Rectangle1 {
     public Square(double side) {
         super(side, side);
     }

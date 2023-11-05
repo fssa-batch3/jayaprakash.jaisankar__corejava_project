@@ -2,13 +2,15 @@ package day05.solved;
 
 public class Square extends Rectangle {
 
+	private static final char[] numberOfSides = null;
+
 	/**
 	 * @param length
 	 * @param breadth
 	 * @throws Exception
 	 */
 	public Square(double sideLength) throws Exception {
-		super(sideLength, sideLength);
+		super();
 		
 	}
 	
